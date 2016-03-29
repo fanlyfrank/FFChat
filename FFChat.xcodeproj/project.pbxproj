@@ -9,12 +9,22 @@
 /* Begin PBXBuildFile section */
 		359C58EB1CA37A10002E2727 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 359C58EA1CA37A10002E2727 /* main.m */; };
 		359C58EE1CA37A10002E2727 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 359C58ED1CA37A10002E2727 /* AppDelegate.m */; };
-		359C58F11CA37A10002E2727 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 359C58F01CA37A10002E2727 /* ViewController.m */; };
 		359C58F41CA37A10002E2727 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359C58F21CA37A10002E2727 /* Main.storyboard */; };
 		359C58F61CA37A10002E2727 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359C58F51CA37A10002E2727 /* Assets.xcassets */; };
 		359C58F91CA37A10002E2727 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359C58F71CA37A10002E2727 /* LaunchScreen.storyboard */; };
 		359C59041CA37A10002E2727 /* FFChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 359C59031CA37A10002E2727 /* FFChatTests.m */; };
 		359C590F1CA37A10002E2727 /* FFChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 359C590E1CA37A10002E2727 /* FFChatUITests.m */; };
+		359C59211CA37CCD002E2727 /* FFInteractiveChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 359C591F1CA37CCD002E2727 /* FFInteractiveChatCell.m */; };
+		359C59241CA37CFC002E2727 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 359C59221CA37CFC002E2727 /* TTTAttributedLabel.m */; };
+		359C59281CA37D10002E2727 /* FFGrowingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 359C59251CA37D10002E2727 /* FFGrowingTextView.m */; };
+		359C592B1CA37D41002E2727 /* FFChatTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 359C592A1CA37D41002E2727 /* FFChatTextCell.m */; };
+		359C592E1CA37DA4002E2727 /* FFChatTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 359C592D1CA37DA4002E2727 /* FFChatTimeCell.m */; };
+		359C59311CA37DB4002E2727 /* UIImage+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 359C592F1CA37DB4002E2727 /* UIImage+Utils.m */; };
+		359C59331CA37DC4002E2727 /* FFChatAudioCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 359C59321CA37DC4002E2727 /* FFChatAudioCell.m */; };
+		359C59351CA37DF9002E2727 /* FFChatImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 359C59341CA37DF9002E2727 /* FFChatImageCell.m */; };
+		359C59441CA4D8D7002E2727 /* FFChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 359C59431CA4D8D7002E2727 /* FFChatViewController.m */; };
+		359C59471CA4E731002E2727 /* FFAudioClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 359C59451CA4E731002E2727 /* FFAudioClient.m */; };
+		359C594A1CA4E795002E2727 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 359C59491CA4E795002E2727 /* libmp3lame.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +49,6 @@
 		359C58EA1CA37A10002E2727 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		359C58EC1CA37A10002E2727 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		359C58ED1CA37A10002E2727 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		359C58EF1CA37A10002E2727 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		359C58F01CA37A10002E2727 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		359C58F31CA37A10002E2727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		359C58F51CA37A10002E2727 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		359C58F81CA37A10002E2727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +59,28 @@
 		359C590A1CA37A10002E2727 /* FFChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		359C590E1CA37A10002E2727 /* FFChatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFChatUITests.m; sourceTree = "<group>"; };
 		359C59101CA37A11002E2727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		359C591F1CA37CCD002E2727 /* FFInteractiveChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFInteractiveChatCell.m; sourceTree = "<group>"; };
+		359C59201CA37CCD002E2727 /* FFInteractiveChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFInteractiveChatCell.h; sourceTree = "<group>"; };
+		359C59221CA37CFC002E2727 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
+		359C59231CA37CFC002E2727 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
+		359C59251CA37D10002E2727 /* FFGrowingTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFGrowingTextView.m; sourceTree = "<group>"; };
+		359C59261CA37D10002E2727 /* FFChatAudioCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFChatAudioCell.h; sourceTree = "<group>"; };
+		359C59271CA37D10002E2727 /* FFGrowingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFGrowingTextView.h; sourceTree = "<group>"; };
+		359C59291CA37D41002E2727 /* FFChatTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFChatTextCell.h; sourceTree = "<group>"; };
+		359C592A1CA37D41002E2727 /* FFChatTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFChatTextCell.m; sourceTree = "<group>"; };
+		359C592C1CA37DA4002E2727 /* FFChatTimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFChatTimeCell.h; sourceTree = "<group>"; };
+		359C592D1CA37DA4002E2727 /* FFChatTimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFChatTimeCell.m; sourceTree = "<group>"; };
+		359C592F1CA37DB4002E2727 /* UIImage+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utils.m"; sourceTree = "<group>"; };
+		359C59301CA37DB4002E2727 /* UIImage+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utils.h"; sourceTree = "<group>"; };
+		359C59321CA37DC4002E2727 /* FFChatAudioCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFChatAudioCell.m; sourceTree = "<group>"; };
+		359C59341CA37DF9002E2727 /* FFChatImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFChatImageCell.m; sourceTree = "<group>"; };
+		359C59361CA37E5E002E2727 /* FFChatImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFChatImageCell.h; sourceTree = "<group>"; };
+		359C59421CA4D8D7002E2727 /* FFChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFChatViewController.h; sourceTree = "<group>"; };
+		359C59431CA4D8D7002E2727 /* FFChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFChatViewController.m; sourceTree = "<group>"; };
+		359C59451CA4E731002E2727 /* FFAudioClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFAudioClient.m; sourceTree = "<group>"; };
+		359C59461CA4E731002E2727 /* FFAudioClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFAudioClient.h; sourceTree = "<group>"; };
+		359C59481CA4E795002E2727 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		359C59491CA4E795002E2727 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				359C594A1CA4E795002E2727 /* libmp3lame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,10 +132,11 @@
 		359C58E81CA37A10002E2727 /* FFChat */ = {
 			isa = PBXGroup;
 			children = (
+				359C591E1CA37BE4002E2727 /* Controller */,
+				359C591D1CA37BCF002E2727 /* Model */,
+				359C591C1CA37BB5002E2727 /* View */,
 				359C58EC1CA37A10002E2727 /* AppDelegate.h */,
 				359C58ED1CA37A10002E2727 /* AppDelegate.m */,
-				359C58EF1CA37A10002E2727 /* ViewController.h */,
-				359C58F01CA37A10002E2727 /* ViewController.m */,
 				359C58F21CA37A10002E2727 /* Main.storyboard */,
 				359C58F51CA37A10002E2727 /* Assets.xcassets */,
 				359C58F71CA37A10002E2727 /* LaunchScreen.storyboard */,
@@ -138,6 +170,49 @@
 				359C59101CA37A11002E2727 /* Info.plist */,
 			);
 			path = FFChatUITests;
+			sourceTree = "<group>";
+		};
+		359C591C1CA37BB5002E2727 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				359C59201CA37CCD002E2727 /* FFInteractiveChatCell.h */,
+				359C591F1CA37CCD002E2727 /* FFInteractiveChatCell.m */,
+				359C59291CA37D41002E2727 /* FFChatTextCell.h */,
+				359C592A1CA37D41002E2727 /* FFChatTextCell.m */,
+				359C59361CA37E5E002E2727 /* FFChatImageCell.h */,
+				359C59341CA37DF9002E2727 /* FFChatImageCell.m */,
+				359C59261CA37D10002E2727 /* FFChatAudioCell.h */,
+				359C59321CA37DC4002E2727 /* FFChatAudioCell.m */,
+				359C592C1CA37DA4002E2727 /* FFChatTimeCell.h */,
+				359C592D1CA37DA4002E2727 /* FFChatTimeCell.m */,
+				359C59271CA37D10002E2727 /* FFGrowingTextView.h */,
+				359C59251CA37D10002E2727 /* FFGrowingTextView.m */,
+				359C59221CA37CFC002E2727 /* TTTAttributedLabel.m */,
+				359C59231CA37CFC002E2727 /* TTTAttributedLabel.h */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		359C591D1CA37BCF002E2727 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				359C59481CA4E795002E2727 /* lame.h */,
+				359C59491CA4E795002E2727 /* libmp3lame.a */,
+				359C59461CA4E731002E2727 /* FFAudioClient.h */,
+				359C59451CA4E731002E2727 /* FFAudioClient.m */,
+				359C592F1CA37DB4002E2727 /* UIImage+Utils.m */,
+				359C59301CA37DB4002E2727 /* UIImage+Utils.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		359C591E1CA37BE4002E2727 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				359C59421CA4D8D7002E2727 /* FFChatViewController.h */,
+				359C59431CA4D8D7002E2727 /* FFChatViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +345,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				359C58F11CA37A10002E2727 /* ViewController.m in Sources */,
 				359C58EE1CA37A10002E2727 /* AppDelegate.m in Sources */,
+				359C592E1CA37DA4002E2727 /* FFChatTimeCell.m in Sources */,
+				359C59211CA37CCD002E2727 /* FFInteractiveChatCell.m in Sources */,
+				359C59351CA37DF9002E2727 /* FFChatImageCell.m in Sources */,
+				359C59331CA37DC4002E2727 /* FFChatAudioCell.m in Sources */,
+				359C592B1CA37D41002E2727 /* FFChatTextCell.m in Sources */,
 				359C58EB1CA37A10002E2727 /* main.m in Sources */,
+				359C59471CA4E731002E2727 /* FFAudioClient.m in Sources */,
+				359C59441CA4D8D7002E2727 /* FFChatViewController.m in Sources */,
+				359C59281CA37D10002E2727 /* FFGrowingTextView.m in Sources */,
+				359C59241CA37CFC002E2727 /* TTTAttributedLabel.m in Sources */,
+				359C59311CA37DB4002E2727 /* UIImage+Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +497,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FFChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFChat",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = www.fanly.com.FFChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -424,6 +512,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FFChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFChat",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = www.fanly.com.FFChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -496,6 +588,7 @@
 				359C59151CA37A11002E2727 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		359C59161CA37A11002E2727 /* Build configuration list for PBXNativeTarget "FFChatTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +597,7 @@
 				359C59181CA37A11002E2727 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		359C59191CA37A11002E2727 /* Build configuration list for PBXNativeTarget "FFChatUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +606,7 @@
 				359C591B1CA37A11002E2727 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
